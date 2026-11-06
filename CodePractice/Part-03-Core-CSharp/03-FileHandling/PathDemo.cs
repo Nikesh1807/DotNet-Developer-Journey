@@ -1,10 +1,13 @@
-// Topic: Path
-// Combines and inspects file paths safely.
-public class PathDemo
+public static class PathDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // string path = Path.Combine("PracticeFiles", "sample.txt");
+        string folder = "PracticeFiles";
+        string fileName = "students.json";
+        string fullPath = Path.Combine(folder, fileName);
+
+        Console.WriteLine($"Combined path: {fullPath}");
+        Console.WriteLine($"Extension: {Path.GetExtension(fullPath)}");
+        Console.WriteLine($"File name: {Path.GetFileName(fullPath)}");
     }
 }

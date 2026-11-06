@@ -1,10 +1,11 @@
-// Topic: HashSet<T>
-// HashSet stores unique values.
-public class HashSetDemo
+public static class HashSetDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // var ids = new HashSet<int> { 1, 2, 2 };
+        HashSet<int> numbers = new() { 1, 2, 2, 3, 3, 4 };
+        numbers.Add(5);
+
+        Console.WriteLine("HashSet keeps unique values:");
+        foreach (int number in numbers) Console.WriteLine(number);
     }
 }

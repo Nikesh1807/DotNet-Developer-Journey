@@ -1,10 +1,16 @@
-// Topic: Generic class
-// A generic class works with a type supplied when an object is created.
-public class GenericClassDemo
+public static class GenericClassDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // var box = new Box<int>(25);
+        Box<int> numberBox = new(25);
+        Box<string> textBox = new("Hello");
+        Console.WriteLine(numberBox.Value);
+        Console.WriteLine(textBox.Value);
+    }
+
+    private class Box<T>
+    {
+        public T Value { get; }
+        public Box(T value) => Value = value;
     }
 }

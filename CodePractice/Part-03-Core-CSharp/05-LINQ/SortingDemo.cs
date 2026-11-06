@@ -1,10 +1,12 @@
-// Topic: OrderBy and OrderByDescending
-// Sorts a sequence.
-public class SortingDemo
+public static class SortingDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // var sorted = numbers.OrderBy(n => n);
+        List<int> marks = new() { 72, 91, 65, 88 };
+        var ascending = marks.OrderBy(mark => mark);
+        var descending = marks.OrderByDescending(mark => mark);
+
+        Console.WriteLine("Ascending: " + string.Join(", ", ascending));
+        Console.WriteLine("Descending: " + string.Join(", ", descending));
     }
 }

@@ -1,10 +1,13 @@
-// Topic: FirstOrDefault and SingleOrDefault
-// Retrieves an element, with different matching-count expectations.
-public class FirstSingleDemo
+public static class FirstSingleDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // var first = numbers.FirstOrDefault();
+        List<string> names = new() { "Aarav", "Diya", "Rohan" };
+
+        string? firstName = names.FirstOrDefault();
+        string? missingName = names.FirstOrDefault(name => name == "Meera");
+
+        Console.WriteLine($"First: {firstName}");
+        Console.WriteLine($"Missing search result: {missingName ?? "No match"}");
     }
 }

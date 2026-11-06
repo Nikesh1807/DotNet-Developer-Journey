@@ -1,8 +1,19 @@
-// Practice methods, parameters, return values and overloading here.
-public class MethodsDemo
+public static class MethodsDemo
 {
     public static void Run()
     {
-        // Add your own examples here.
+        Greet("Nikesh");
+        int total = Add(10, 20);
+        Console.WriteLine($"Sum: {total}");
+    }
+
+    private static void Greet(string name)
+    {
+        Console.WriteLine($"Hello, {name}!");
+    }
+
+    private static int Add(int a, int b)
+    {
+        return a + b;
     }
 }

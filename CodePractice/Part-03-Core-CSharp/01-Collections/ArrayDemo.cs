@@ -1,10 +1,10 @@
-// Topic: Array
-// An array stores a fixed-size sequence of values of the same type.
-public class ArrayDemo
+public static class ArrayDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // int[] numbers = { 10, 20, 30 };
+        int[] scores = { 70, 85, 90 };
+        Console.WriteLine($"First score: {scores[0]}");
+        Console.WriteLine($"Number of scores: {scores.Length}");
+        foreach (int score in scores) Console.WriteLine(score);
     }
 }

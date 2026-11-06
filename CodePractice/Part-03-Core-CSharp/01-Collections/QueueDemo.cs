@@ -1,11 +1,13 @@
-// Topic: Queue<T>
-        // Queue follows first-in, first-out (FIFO).
-        public class QueueDemo
-        {
-            public static void Run()
-            {
-                // Example to study and expand:
-                // var queue = new Queue<string>();
-//         queue.Enqueue("First");
-            }
-        }
+public static class QueueDemo
+{
+    public static void Run()
+    {
+        Queue<string> line = new();
+        line.Enqueue("Customer 1");
+        line.Enqueue("Customer 2");
+
+        Console.WriteLine($"Next: {line.Peek()}");
+        Console.WriteLine($"Served: {line.Dequeue()}");
+        Console.WriteLine($"Waiting: {line.Count}");
+    }
+}

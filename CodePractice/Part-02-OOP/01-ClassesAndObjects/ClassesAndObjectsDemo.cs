@@ -1,8 +1,21 @@
-// Practice defining classes and creating objects here.
-public class ClassesAndObjectsDemo
+public static class ClassesAndObjectsDemo
 {
     public static void Run()
     {
-        // Add your own examples here.
+        Car car = new Car();
+        car.Brand = "Toyota";
+        car.Model = "Corolla";
+        car.DisplayDetails();
+    }
+
+    private class Car
+    {
+        public string Brand { get; set; } = "";
+        public string Model { get; set; } = "";
+
+        public void DisplayDetails()
+        {
+            Console.WriteLine($"{Brand} {Model}");
+        }
     }
 }

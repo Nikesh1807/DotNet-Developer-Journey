@@ -1,2 +1,10 @@
-Console.WriteLine("Part 2 – Object-Oriented Programming practice");
-Console.WriteLine("Add your OOP demo calls here when you migrate your examples.");
+Console.WriteLine("=== PART 2: OOP ===");
+ClassesAndObjectsDemo.Run();
+ConstructorsDemo.Run();
+MethodsAndPropertiesDemo.Run();
+EncapsulationDemo.Run();
+InheritanceDemo.Run();
+PolymorphismDemo.Run();
+AbstractionDemo.Run();
+InterfacesDemo.Run();
+ExceptionHandlingDemo.Run();

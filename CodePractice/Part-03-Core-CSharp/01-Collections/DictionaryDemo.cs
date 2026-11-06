@@ -1,10 +1,19 @@
-// Topic: Dictionary<TKey, TValue>
-// Dictionary stores key-value pairs.
-public class DictionaryDemo
+public static class DictionaryDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // var ages = new Dictionary<string, int> { ["Asha"] = 21 };
+        Dictionary<string, int> ages = new()
+        {
+            ["Aarav"] = 21,
+            ["Diya"] = 20
+        };
+
+        ages["Rohan"] = 22;
+
+        foreach (var item in ages)
+            Console.WriteLine($"{item.Key}: {item.Value}");
+
+        if (ages.TryGetValue("Diya", out int age))
+            Console.WriteLine($"Diya is {age}");
     }
 }

@@ -1,8 +1,20 @@
-// Practice try, catch, finally and custom exceptions here.
-public class ExceptionHandlingDemo
+public static class ExceptionHandlingDemo
 {
     public static void Run()
     {
-        // Add your own examples here.
+        try
+        {
+            int divisor = 0;
+            int result = 100 / divisor;
+            Console.WriteLine(result);
+        }
+        catch (DivideByZeroException ex)
+        {
+            Console.WriteLine($"Cannot divide by zero: {ex.Message}");
+        }
+        finally
+        {
+            Console.WriteLine("Calculation attempt finished.");
+        }
     }
 }

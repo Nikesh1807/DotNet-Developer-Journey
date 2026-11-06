@@ -1,10 +1,12 @@
-// Topic: Directory
-// Creates and manages directories.
-public class DirectoryDemo
+public static class DirectoryDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // Directory.CreateDirectory("PracticeFiles");
+        string folder = "PracticeFiles";
+        Directory.CreateDirectory(folder);
+        Console.WriteLine($"Folder exists: {Directory.Exists(folder)}");
+
+        foreach (string file in Directory.GetFiles(folder))
+            Console.WriteLine(file);
     }
 }

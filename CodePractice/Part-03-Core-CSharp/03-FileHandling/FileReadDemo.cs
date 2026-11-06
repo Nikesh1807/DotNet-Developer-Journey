@@ -1,10 +1,12 @@
-// Topic: File.ReadAllText
-// Reads all text from a file.
-public class FileReadDemo
+public static class FileReadDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // // string content = File.ReadAllText("sample.txt");
+        string path = Path.Combine("PracticeFiles", "message.txt");
+
+        if (File.Exists(path))
+            Console.WriteLine(File.ReadAllText(path));
+        else
+            Console.WriteLine("File not found. Run FileWriteDemo first.");
     }
 }

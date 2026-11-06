@@ -1,10 +1,13 @@
-// Topic: Count, Sum, Average, Min and Max
-// Calculates summary values from a sequence.
-public class AggregateDemo
+public static class AggregateDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // int total = numbers.Sum();
+        List<int> marks = new() { 70, 80, 90, 100 };
+
+        Console.WriteLine($"Count: {marks.Count}");
+        Console.WriteLine($"Sum: {marks.Sum()}");
+        Console.WriteLine($"Average: {marks.Average()}");
+        Console.WriteLine($"Minimum: {marks.Min()}");
+        Console.WriteLine($"Maximum: {marks.Max()}");
     }
 }

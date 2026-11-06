@@ -1,8 +1,21 @@
-// Practice switch statements here.
-public class SwitchDemo
+public static class SwitchDemo
 {
     public static void Run()
     {
-        // Add your own examples here.
+        int dayNumber = 3;
+
+        string day = dayNumber switch
+        {
+            1 => "Monday",
+            2 => "Tuesday",
+            3 => "Wednesday",
+            4 => "Thursday",
+            5 => "Friday",
+            6 => "Saturday",
+            7 => "Sunday",
+            _ => "Invalid day"
+        };
+
+        Console.WriteLine(day);
     }
 }

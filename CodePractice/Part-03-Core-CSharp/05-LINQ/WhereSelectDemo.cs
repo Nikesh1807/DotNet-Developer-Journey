@@ -1,10 +1,13 @@
-// Topic: Where and Select
-// Where filters items; Select transforms each item.
-public class WhereSelectDemo
+public static class WhereSelectDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // var result = numbers.Where(n => n > 10).Select(n => n * 2);
+        List<int> numbers = new() { 2, 5, 8, 11, 14 };
+        var doubledEvenNumbers = numbers
+            .Where(number => number % 2 == 0)
+            .Select(number => number * 2);
+
+        foreach (int number in doubledEvenNumbers)
+            Console.WriteLine(number);
     }
 }

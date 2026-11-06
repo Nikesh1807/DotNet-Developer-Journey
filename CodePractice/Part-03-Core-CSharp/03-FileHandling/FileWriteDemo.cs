@@ -1,10 +1,11 @@
-// Topic: File.WriteAllText
-// Writes text to a file, creating or replacing it.
-public class FileWriteDemo
+public static class FileWriteDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // File.WriteAllText("sample.txt", "Hello from C#");
+        string folder = "PracticeFiles";
+        Directory.CreateDirectory(folder);
+        string path = Path.Combine(folder, "message.txt");
+        File.WriteAllText(path, "Hello! This text was saved using C#.");
+        Console.WriteLine($"Text written to: {path}");
     }
 }

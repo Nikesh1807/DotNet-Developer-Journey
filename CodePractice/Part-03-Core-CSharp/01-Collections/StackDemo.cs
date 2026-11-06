@@ -1,11 +1,14 @@
-// Topic: Stack<T>
-        // Stack follows last-in, first-out (LIFO).
-        public class StackDemo
-        {
-            public static void Run()
-            {
-                // Example to study and expand:
-                // var stack = new Stack<string>();
-//         stack.Push("First");
-            }
-        }
+public static class StackDemo
+{
+    public static void Run()
+    {
+        Stack<string> pages = new();
+        pages.Push("Home");
+        pages.Push("Products");
+        pages.Push("Cart");
+
+        Console.WriteLine($"Current page: {pages.Peek()}");
+        Console.WriteLine($"Back to: {pages.Pop()}");
+        Console.WriteLine($"Now: {pages.Peek()}");
+    }
+}

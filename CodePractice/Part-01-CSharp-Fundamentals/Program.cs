@@ -1,2 +1,9 @@
-Console.WriteLine("Part 1 – C# Fundamentals practice");
-Console.WriteLine("Add your topic demo calls here when you migrate your examples.");
+Console.WriteLine("=== PART 1: C# FUNDAMENTALS ===");
+VariablesAndDataTypes.Run();
+OperatorsDemo.Run();
+IfElseDemo.Run();
+SwitchDemo.Run();
+LoopsDemo.Run();
+MethodsDemo.Run();
+ArraysDemo.Run();
+StringsDemo.Run();

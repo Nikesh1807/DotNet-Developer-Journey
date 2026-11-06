@@ -1,8 +1,19 @@
-// Practice for, while and do-while loops here.
-public class LoopsDemo
+public static class LoopsDemo
 {
     public static void Run()
     {
-        // Add your own examples here.
+        Console.WriteLine("For loop:");
+        for (int i = 1; i <= 5; i++)
+            Console.Write($"{i} ");
+
+        Console.WriteLine("\nWhile loop:");
+        int count = 1;
+        while (count <= 3)
+        {
+            Console.Write($"{count} ");
+            count++;
+        }
+
+        Console.WriteLine();
     }
 }

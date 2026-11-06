@@ -1,8 +1,14 @@
-// Practice if, else-if and else here.
-public class IfElseDemo
+public static class IfElseDemo
 {
     public static void Run()
     {
-        // Add your own examples here.
+        int marks = 76;
+
+        if (marks >= 80)
+            Console.WriteLine("Distinction");
+        else if (marks >= 60)
+            Console.WriteLine("First class");
+        else
+            Console.WriteLine("Needs improvement");
     }
 }

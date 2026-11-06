@@ -1,10 +1,19 @@
-// Topic: Generic constraints
-// Constraints restrict which types can be used for a generic type parameter.
-public class GenericConstraintsDemo
+public static class GenericConstraintsDemo
 {
     public static void Run()
     {
-        // Example to study and expand:
-        // // Example: where T : class
+        PrintObject(new Student("Nikesh"));
+    }
+
+    private static void PrintObject<T>(T item) where T : class
+    {
+        Console.WriteLine(item);
+    }
+
+    private class Student
+    {
+        private readonly string _name;
+        public Student(string name) => _name = name;
+        public override string ToString() => _name;
     }
 }
